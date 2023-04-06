@@ -1,16 +1,15 @@
-<<<<<<< HEAD
+
 BIENVENUE cher.e utilisateur/trice !!!!
 
 Ce read me vous permettra d'avoir une prise en main de notre logiciel de gestion paie.
 
 	I - INSTALLATION
-A travers le logiciel OpenCobolIDE 4.7.6 : 
+		- Veuillez installer le logiciel OpenCobolIDE 4.7.6 : 
 		- Ouvrez le fichier "GestionPaie" -> lancer l'application avec le bouton "RUN"
 		- L'application est désormais manipulable dans le terminal de votre système, agrandissez la fenêtre du terminal pour la visualiser encore mieux!
 
-A travers OPEN COBOL 1.1 du CIE : 
-		- Ouvrez le fichier "GestionPaie" dans un éditeur -> compiler à l'aide de la commande "cobc --free -x GestionPaie.cob"
-		  si erreur essayer avec la commande "cobc -x GestionPaie.cob"
+		- Avec ligne de commande si vous installez OPEN COBOL 1.1 du CIE : 
+		- Ouvrez le fichier "GestionPaie" dans un éditeur -> compiler à l'aide de la commande "cobc -x GestionPaie.cob"
 		- Exécutez avec la commande "./GestionPaie"
 
 	II - UTILISATION
