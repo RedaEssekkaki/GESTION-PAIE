@@ -1,40 +1,66 @@
+<<<<<<< HEAD
+BIENVENUE cher.e utilisateur/trice !!!!
 
-# Projet de création d'un logiciel de gestion de paie
-Ce logiciel permet de gérer les processus liés à la paie des employés d'une entreprise
+Ce read me vous permettra d'avoir une prise en main de notre logiciel de gestion paie.
 
+	I - INSTALLATION
+A travers le logiciel OpenCobolIDE 4.7.6 : 
+		- Ouvrez le fichier "GestionPaie" -> lancer l'application avec le bouton "RUN"
+		- L'application est désormais manipulable dans le terminal de votre système, agrandissez la fenêtre du terminal pour la visualiser encore mieux!
 
+A travers OPEN COBOL 1.1 du CIE : 
+		- Ouvrez le fichier "GestionPaie" dans un éditeur -> compiler à l'aide de la commande "cobc --free -x GestionPaie.cob"
+		  si erreur essayer avec la commande "cobc -x GestionPaie.cob"
+		- Exécutez avec la commande "./GestionPaie"
 
-## Execution du programme
-pour compiler le programme avec les machines de la fac utiliser le compilateur OPEN COBOL 1.1
-Ajouter cette librairie pour executer: export LD_LIBRARY_PATH=/usr/local/opt/open-cobol/lib
+	II - UTILISATION
+Au lancement du logiciel, vous avez le choix entre deux Menus : 
+	
+	1 - Menu administrateur { Username: admin } uniquement pour la direction des ressources humaines et le CEO
+				{ Password: admin }
+    
+    2 - Menu directeur pour le chef d'entreprise qui veut un acces simplifié aux fonctionnalités {Username : directeur}{Password : directeur}
+	3 - Menu employé/utilisateur : pas de username, pas de password
 
-compilation :
+DISCLAIMERS : 
 
--en respectant le code entre les colonnes 8 et 72 : cobc -x nomfic.cob (pour écrire des commentaires - mettre un * col 7)
--sans respecter le code entre les colonnes 8 et 72 : cobc --free -x nomfic.cob (pour écrire des commentaires - mettre *> )
+-----ATTENTION le logiciel effacera vos données de test à la fin de programme, ceci pour permettre de repartir du même environnement à chaque fois
+-----ATTENTION si vous sortez d'un menu, le logiciel s'arretera et les données que vous avez rentré seront réinitialisés pour permettre à quelqu'un d'autre de tester le logiciel à partir de zéro
+-----ATTENTION des enregistrements d'employés et de domaines sont déjà renseignés dans le logiciel, vous pouvez directement utiliser ceux ci pour vos test ou proceder avec vos jeux de test en supprimant les enregistrements avec les fonctionnalités de suppression données
 
-Exécution : ./nomfic
-
-sur les autres PC : veuillez installer OPEN COBOL 1.1
-## Utilisation de l'application 
-
-dans ce projet on peut se connecter en tant que directeur ou admin:
-
-- Directeur: 
-username: directeur , password : directeur
-- Admin:
-username : admin , password : admin
-
-
-## Se connecter
--pour se connecter en tant qu'admin :
-![alt tag](https://gitlab.univ-nantes.fr/E20B396W/projetcobol/uploads/85c7b24fc28f4984e662a33c97e600dc/se_connecter_admin.png)
-
--les diffèrents fonctionnalités qu'on peut avoir une foi connecté en tant qu'admin :
-![alt tag](https://gitlab.univ-nantes.fr/E20B396W/projetcobol/uploads/e1bb74bc91b7d1d059f31fe660c56e7c/connecter_tant_qu_admin.png)
-
--Se connecter en tant que directeur et les différents fonctionnalités qu'on peut avoir une fois connecté en tant que directeur :
-![alt tag](https://gitlab.univ-nantes.fr/E20B396W/projetcobol/uploads/afea7b8df87907997cf11f6a11b45e9c/connecter_en_tant_que_directeur.png)
-
+    TESTS conseillés pour un premier contact avec le logiciel:
+    - Connectez-vous en tant que admin
+    - affichez tous les employés avec la fonctionnalité donnée
+    - affichez le metier avec la fonctionnalité donnée
+    - essayez de produire des bulletins de paie pour le mois courant -- attention vous pourrez faire ça une seule fois pas session d'execution du logiciel
+    - produisez un rapport de paie pour le mois courant en saisissant les valeurs demandés
 
 
+Si vous choisissez de supprimer les données des employés présents et le metier déjà présent au lanceent du logiciel il faudra suivre une séquence d'opérations à réaliser dans l'ordre pour avoir un workflow idéal du logiciel:
+!!! Vous devez d'abord inserer les données avec le rôle "administrateur" selon un ordre de priorité.  !!!
+      -->LES SAISIES à réaliser dans l'ordre:
+	1 - Saisir les métiers
+	2 - Saisir les employés avec les metiers existants
+	3 - Production des bulletins de paie
+	4 - Production des rapports de paie
+      
+      -->LES CONSULTATIONS (sans ordre specifique, pour vérifier que les données sont bien chargés):
+	5 - Consulter les metiers, les employés, les bulletins de paie, les rapports de paie
+
+      -->LES EDITIONS:
+	6 - Editer les informations des employés, les metiers, la mise à jour du taux des cotisations sociales(25%)
+
+      -->LES SUPPRESSIONS:
+	7 - Supprimer les metiers, les employés. 
+
+Le Menu employé permet aux employés ou simples utilisateurs d'avoir uniquement la rubrique/
+      -->LES CONSULTATIONS:
+		Des bulletins de paie et des metiers.
+
+
+	III - CONTRIBUTIONS
+	entreprise : G4-cinématique
+	developpeurs : Reda ESSEKKAKI, Christel MVELE, Aubin KAMANDA, Fatoumata DIALLO
+
+
+	NO COPYRIGHT. ALL RIGHTS RESERVED 2023 ©
